@@ -21,7 +21,7 @@ class Map
     end
 
     def show
-        @map
+        @map.dup
     end
 
 end
