@@ -11,9 +11,7 @@ class Board
   def place_stones
     # helper method to #initialize every non-store cup with four stones each
     (0...@cups.length).each do |i|
-      if i == 6 || i == 13
-        next
-      else
+      if i != 6 && i != 13
         4.times do
           @cups[i] << :stone
         end
